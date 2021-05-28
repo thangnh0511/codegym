@@ -1,0 +1,9 @@
+table, tr, td, th{
+    border-collapse: collapse;
+    border: 1 solid #ccc;
+    width: 300px;
+}
+
+li ul li {
+    list-style-image: url('../img/icons8-google-books-17.png');
+}

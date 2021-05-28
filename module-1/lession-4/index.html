@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <style>
+        html {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        #thuchanh {
+            width: 90%;
+            margin: auto;
+            background-color: burlywood;
+            border-radius: 2%;
+        }
+
+        #baihoc {
+            width: 90%;
+            margin: auto;
+            background-color: gainsboro;
+            border-radius: 2%;
+        }
+
+        .box{
+            padding: 20px 20px 20px 20px;
+            border-radius: 5%;
+        }
+
+        
+        .box-2{
+            padding: 20px 20px 20px 20px;
+            border-radius: 5%;
+            font-size: 14px;
+        }
+
+        .p-reg-form{
+            font-size: 12px;
+        }
+        #reg-box input {
+            border-radius:5px;
+            margin: 5px 5px 5px 5px;
+        }
+            </style>
+   
+    <title>Lession 4 - Form</title>
+</head>
+<body>
+    <div id="thuchanh">
+        <!-- <div class="box">
+            <form action="" name="first">
+                <label for="user">Username:</label> <input type="text" name="user" id="user" placeholder="nhập user"><br><br>
+                <label for="pass">Password:</label> <input type="password" name="pass" id="pass"><br>
+                <label for="gerne"><h4>Giới tính</h4></label>
+                <label>Nam</label><input type="radio" id="gerne" name="gt"> | 
+                <label>Nữ</label><input type="radio" name="gt"> |
+                <label>Không rõ</label><input type="radio" name="gt">
+                <br>
+                <h4>Sở thích</h4>
+                <label for="">Bóng bàn<input type="checkbox"></label>
+                <label for="">Bóng đá<input type="checkbox"></label>
+                <label for="">Cầu lông<input type="checkbox"></label>
+                <label for="">Bơi lội<input type="checkbox"></label>
+                <hr>
+                <h4>Nội dung</h4>
+                <textarea name="noidung" id="" cols="50%" rows="5">Nhập nội dung</textarea>
+                <br>
+                <h4>Ngày sinh</h4>
+                <label>Ngày</label>
+                    <select name="ngay">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                <label>Tháng</label>
+                    <select name="thang">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                    </select>
+                <label>Năm</label>
+                    <select name="nam">
+                        <option>2000</option>
+                        <option>2001</option>
+                        <option>2002</option>
+                        <option>2003</option>
+                    </select>
+                <br>
+                <hr>
+                <input type="submit" value="Đăng ký">
+                <input type="button" name="" value="Kiểm tra">
+                <input type="reset" value="Nhập lại">
+            </form>
+        </div> -->
+        <div class="box-2">
+            <table width="400px" style="background-color:antiquewhite; border-radius: 3%; padding:20px 20px 20px 20px; margin: auto;">
+                <tr>
+                    <td>
+                        <label for="reg"><h1>Đăng ký</h1></label>
+                        <p class="p-reg-form">Nhanh chóng và dễ dàng.</p><hr>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <form action="" id="reg-box">
+                            <table>
+                                <tr>
+                                    <td><input type="text" placeholder="Họ" id="reg" style="width:187px ;height: 20px;"></td>
+                                    <td><input type="text" placeholder="Tên" style="width:187px ;height: 20px;"></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2"><input type="email" placeholder="Số di động hoặc email" style="width:400px; height: 20px;"><br></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2"><input type="password" placeholder="Mật khẩu mới" style="width:400px; height: 20px;"></td>
+                                </tr>
+                            </table>
+                            <p class="p-reg-form">Ngày sinh</p>
+                            <label>Ngày</label>
+                                <select name="ngay">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                            <label>Tháng</label>
+                                <select name="thang">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                </select>
+                            <label>Năm</label>
+                                <select name="nam">
+                                    <option>2000</option>
+                                    <option>2001</option>
+                                    <option>2002</option>
+                                    <option>2003</option>
+                                </select>
+                            <label for="gioitinh"><p class="p-reg-form">Giới tính</p></label>
+                            <label>Nam</label><input type="radio" name="gt" id="gioitinh">
+                            <label>Nữ</label><input type="radio" name="gt">
+                            <label>Tùy chỉnh</label><input type="radio" name="gt">
+                            <p class="p-reg-form">Bằng cách nhấp vào Đăng ký, bạn đồng ý với <a href="#">Điều khoản, Chính sách dữ liệu và Chính sách</a> cookie của chúng tôi. Bạn có thể nhận được thông báo của chúng tôi qua SMS và hủy nhận bất kỳ lúc nào.</p>
+                            <input type="submit" value="Đăng ký" style="margin-left:30%; width: 150px; height: 50px; border-radius:10px; background-color: #00a400;">
+                        </form>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <br>
+    <div id="thuchanh">
+        <div class="box-2">
+            <table border="1">
+                <tr>
+                    <td width="20%"><img src="./img/maylanh.jpg" alt="" width="100%"></td>
+                    <td>
+                        <h1><a href="#" style="font-size: 20px; text-decoration: none; color: #000;"> Điều hòa Samsung Wind-Free Inverter 9400 BTU AR10TYGCDWKNSV </a></h1>
+                        <ul><h4>Chọn 1 trong 2 khuyến mãi:</h4>
+                            <li>- Không tặng ống đồng và vật tư.</li>
+                            <li>- Chỉ giao hàng, không lắp đặt.</li>
+                        </ul>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <br>
+    <div id="baihoc">
+        <div class="box">
+            <h1>Nội dung bài học</h1>
+            <h3>Thẻ input</h3>
+            <ul type="square">
+                <li>Thẻ input submit --> dữ liệu đẩy lên thuộc tính action của form</li>
+                <li>Thẻ input button --> xử lý tại trang - sử dụng script để xử lý check</li>
+                <li>Thẻ input reset --> nhập lại toàn dữ liệu</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

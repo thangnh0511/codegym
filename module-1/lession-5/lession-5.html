@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style/style-lession.css">
+    <title>Lession 5 - Media</title>
+</head>
+<body>
+    <div class="main">
+        <!-- <video src="media/mov_bbb.mp4" controls width="50%"></video> -->
+        <div class="box-learn">
+            <video controls>
+                <source src="media/mov_bbb.mp4" type="video/mp4">
+                <source src="media/mov_bbb.mp4" type="video/ogg">
+            </video>
+            <br>
+            <audio controls>
+                <source src="media/mov_bbb.ogg" type="audio/ogg">
+            </audio>
+            <audio>
+                <source src="media/milano.aac">
+            </audio>
+            <div class="box-note">
+                <h3>Note</h3>
+                <p>3 thuộc tính quan trọng cần lưu ý của thẻ VIDEO và AUDIO</p>
+                <ol>
+                    <li>Controls = khai báo mới hiển thị thanh điều khiển, đối với audio khai báo mới hiển thị trình điều khiển audio nếu không thì sẽ ẩn</li>
+                    <li>loop="1" cho phép lặp</li>
+                    <li>autoplay: khai báo sẽ tự động play khi truy cập trang web </li>
+                </ol>
+            </div>
+        </div>
+        
+        <div class="box-learn">
+            <h3>iframe</h3>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/23oudXZxi-I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay='1'; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <h3>thêm các thuộc tính để autoplay, mute, loop</h3>
+                <iframe width="560" height="315"
+                src="https://www.youtube.com/embed/23oudXZxi-I?autoplay=0&controls=0">
+                </iframe>
+                
+            <div class="box-note">
+                <h3>Note</h3>
+                <p>Thêm các thuộc tính vào video từ youtube. Thêm vào liền sau link source và cách nhau bằng "&"</p>
+                
+
+            </div>
+        </div>
+    </div>  
+</body>
+</html>

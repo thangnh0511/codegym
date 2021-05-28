@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        html{
+            font-family: 'Courier New', Courier, monospace;
+        }
+        div{
+            margin: auto;
+            width: 90%;
+            padding: 20px 20px 20px 50px;
+            box-shadow: 0 5px 10px 0px rgba(1, 1, 1, 1);
+            background-color: white;
+        }
+        body{
+            background-color: slategrey;
+        }
+        h3{
+            margin-bottom: 10px;
+        }
+        p{
+            margin-top: 0px;
+        }
+        input, option{
+            margin-top: 10px;
+        }
+        #rate{
+            width: 90%;
+            height: 200px;
+        }
+        #content{
+            width: 90%;
+            height: 100px;
+        }
+
+        #age, #income {
+            width: 50%;
+            height: 36px;
+            border-radius: 5px;
+        }
+        #c1-1,#c1-2,#c1-3,#c1-4,#c2-1,#c2-2,#c2-3,#c2-4,#c3-1,#c3-2,#c3-3,#c3-4 {
+            
+        }
+        .r1{
+            padding-left: 10px;
+        }
+    </style>
+    <title>Nguyễn Hữu Thắng - Bài tập buổi 7</title>
+</head>
+<body>
+    <div>
+        <form action="">
+            <h1>Market Research Survey</h1>
+            <p>Please take a few moments to complete this satisfaction survey.</p>
+            <br><hr>
+            <h3><label for="age">What is your age range?</label></h3>
+            <select name="age" id="age">
+                <option>15-17</option>
+                <option>18-25</option>
+                <option>26-30</option>
+                <option>31-40</option>
+                <option>41-50</option>
+            </select><br>
+            <h3><label for="income">What is your yearly income range?</label></h3>
+            <select name="income" id="income">
+                <option>$0 - $500</option>
+                <option>$500 - $1,000</option>
+                <option>$1,000 - $2,000</option>
+                <option>$2,000 - $10,000</option>
+                <option>$10,000 - $50,000</option>
+            </select><br>
+            <h3><label for="gender">Gender</label></h3>
+            <input type="radio" id="gender" name="gender"><label for="gender">Male</label>
+            <input type="radio" name="gender" id="gender2"><label for="gender2">Female</label>
+            <br>
+            <h3><label for="prod1">Which of the following products have your purchased in the last 2 months. Please check all that apply</label></h3>
+            <input type="checkbox" id="prod1"><label for="prod1">Product 1</label><br>
+            <input type="checkbox" id="prod2"><label for="prod2">Product 3</label><br>
+            <input type="checkbox" id="prod3"><label for="prod3">Product 3</label><br>
+            <br>
+            <h3><label for="using">How often would you use our new product?</label> </h3>
+            <input type="radio" id="using" name="using"><label for="using">Daily</label>
+            <input type="radio" name="using" id="using2"><label for="using2">Weekly</label>
+            <input type="radio" name="using" id="using3"><label for="using3">Monthly</label>
+            <br>
+            <h3><label for="paid">What would you pay for the new product?</label></h3>
+            <table>
+                <tr>
+                    <td style="font-size: larger;" valign="bottom"><b>$</b></td>
+                    <td>
+                        <input type="number" name="dollars" id="paid" min="0">
+                    </td>
+                    <td>
+                        <input type="number" name="cents" min="0" max="99">
+                    </td>
+                </tr>
+                <tr align="left">
+                    <td></td>
+                    <td>Dollars</td>
+                    <td>Cents</td>
+                </tr>
+            </table>
+            <br>
+            <h3><label for="content">What features would you like to see in the new product.</label></h3>
+            <textarea name="" id="content"></textarea>
+            <br>
+            <h4><label for="rate">Please rate your level of agreement with the following statements.</label></h4>
+            <table border="1" style="border-collapse:collapse;" id="rate">
+                <tr style="background-color:#ccc">
+                    <th height="25%"></th>
+                    <th width="15%">Strongly Disagree</th>
+                    <th width="15%">Disagree</th>
+                    <th width="15%">Agree</th>
+                    <th width="15%">Strongly Agree</th>
+                </tr>
+                <tr>
+                    <td class="r1"><b>Our products are picked fairly.</b></td>
+                    <td align="center"><input type="radio" name="rate1" id="c1-1"><p><label for="c1-1">1</label></p></td>
+                    <td align="center"><input type="radio" name="rate1" id="c1-2"><p><label for="c1-2">2</label></p></td>
+                    <td align="center"><input type="radio" name="rate1" id="c1-3"><p><label for="c1-3">3</label></p></td>
+                    <td align="center"><input type="radio" name="rate1" id="c1-4"><p><label for="c1-4">4</label></p></td>
+                </tr>
+                <tr style="background-color:#ccc">
+                    <td class="r1"><b>Our products are high quality.</b></td>
+                    <td align="center"><input type="radio" name="rate2" id="c2-1"><p><label for="c2-1">1</label></p></td>
+                    <td align="center"><input type="radio" name="rate2" id="c2-2"><p><label for="c2-2">2</label></p></td>
+                    <td align="center"><input type="radio" name="rate2" id="c2-3"><p><label for="c2-3">3</label></p></td>
+                    <td align="center"><input type="radio" name="rate2" id="c2-4"><p><label for="c2-4">4</label></p></td>
+                </tr>
+                <tr>
+                    <td class="r1"><b>You would recommend our product to a friend or coworker.</b></td>
+                    <td align="center"><input type="radio" name="rate3" id="c3-1"><p><label for="c3-1">1</label></p></td>
+                    <td align="center"><input type="radio" name="rate3" id="c3-2"><p><label for="c3-2">2</label></p></td>
+                    <td align="center"><input type="radio" name="rate3" id="c3-3"><p><label for="c3-3">3</label></p></td>
+                    <td align="center"><input type="radio" name="rate3" id="c3-4"><p><label for="c3-4">4</label></p></td>
+                </tr>
+            </table>
+            <br>
+            <input type="Submit" value="Submit" style="width: 100px;height: 36px;">
+        </form>
+    </div>
+</body>
+</html>
