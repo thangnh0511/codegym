@@ -1,0 +1,187 @@
+#nav {
+    font-weight: bold;
+    text-decoration: none;
+    color: red;
+}
+
+#nav a {
+    font-weight: bold;
+    text-decoration: none;
+    color: red;
+}
+
+
+#table-1{
+    border-collapse: collapse ;
+    border: 1px solid #69D2E7;
+    width: 600px;
+    height: 90px;
+}
+
+/* #table-1 tr:nth-child(even) {
+    background-color: #69D2E7;
+} */
+
+#table-1 td {
+    padding: 10px 20px 10px;
+    border: 1px solid #69D2E7;
+}
+
+#table-1 th {
+    padding: 10px 20px 10px;
+    border: 1px solid #FA6900;
+    background-color: #F38630;
+}
+
+#cot1 {
+    width: 50%;
+}
+#cot2 {
+    width: 25%;
+}
+#cot3 {
+    width: 25%;
+}
+
+/* table 2 */
+#table-2{
+    border-collapse: collapse ;
+    border: 1px solid #D7D7D7;
+    width: 750px;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    margin: auto;
+}
+
+.dong-1 {
+    background-color: #008000;
+    text-align: center; 
+    height: 23px;
+    line-height: 23px;
+    color: #fff;
+}
+
+#table-2 td{
+    border: 1px solid #D7D7D7;
+    height: 42px;
+    /* color: black; */
+    padding: 0px 20px 0px;
+    text-align: center;
+}
+
+#table-2 span{
+    color: red;
+}
+
+#cot-1 {
+    width: 20%;
+}
+
+#cot-2 {
+    width: 30%;
+    text-align: center;
+}
+
+#cot-3 {
+    width: 14%;
+}
+
+#cot-4 {
+    text-align: center;
+}
+
+.center {
+    text-align: center;
+}
+
+/* BAI TAP THUC HANH 2 */
+#table-3 {
+    margin: auto;
+}
+
+#cot-3-1 {
+    width: 345px;
+}
+#cot-3-2 {
+    width: 239px;
+}
+#cot-3-3 {
+    width: 102px;
+}
+
+ul{
+    list-style: square;
+}
+
+.danhsach{
+    list-style-position: inside;
+    list-style-image: url("../img/icons8-google-books-17.png");
+}
+
+/* ------------------------------ */
+
+#table-3 {
+    width: 686px;
+    font-weight: bold;
+    border-collapse: collapse ;
+    font-size: 14px;
+}
+
+#table-3 tr {
+    height: 40px;
+    line-height: 23px;
+
+}
+
+#table-3 td {
+    border: 1px solid rgb(215, 215, 215);
+    padding: 4px;
+}
+
+
+#table-3 .thead1 th{
+    color: white;
+    background-color: #65A530;
+    border: 1px solid rgb(215, 215, 215);
+    height: 40px;
+    line-height: 40px;
+}
+
+
+#table-3 .thead2 th{
+    color: black;
+    background-color: #FFFFBB;
+    border: 1px solid rgb(215, 215, 215);
+    height: 23px;
+    line-height: 23px;
+    padding: 4px;
+}
+
+#table-3 .trow1{
+    color: black;
+    background-color: #D5FFFF;
+    border: 1px solid rgb(215, 215, 215);
+    height: 23px;
+    line-height: 23px;
+}
+
+#table-3 .trow2{
+    color: black;
+    background-color: #E8F5DE;
+    border: 1px solid rgb(215, 215, 215);
+    height: 23px;
+    line-height: 23px;
+}
+
+#table-3 .trow3{
+    color: black;
+    background-color: #D7D7D7;
+    border: 1px solid rgb(215, 215, 215);
+    height: 23px;
+    line-height: 23px;
+}
+
+.redhl {
+    color: red;
+}
