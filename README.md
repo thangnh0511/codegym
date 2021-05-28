@@ -1,0 +1,1 @@
+Codegym frontend course - note
