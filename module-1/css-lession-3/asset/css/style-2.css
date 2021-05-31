@@ -1,0 +1,15 @@
+#big{
+    width: 600px;
+    height: 600px;
+    background-color: #FF7F50;
+    float: left;
+}
+
+#small{
+    width: 200px;
+    height: 200px;
+    background-color: #CCCCFF;
+    margin-left: 200px;
+    margin-top: 200px;
+
+}

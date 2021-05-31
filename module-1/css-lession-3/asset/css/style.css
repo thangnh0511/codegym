@@ -1,0 +1,167 @@
+.note {
+
+}
+
+h1{
+    text-align: center;
+    line-height: 100px;
+}
+#mau-do {
+    width: 100px;
+    height: 200px;
+    background-color: red;
+    float: left;
+}
+
+#mau-xanh {
+    width: 190px;
+    height: 200px;
+    border: 5px solid #68F5FA;
+    background-color: #1332CE;
+    /* margin-left: 200px; */
+    /* margin-top: 40px; */
+    float: left;
+    /* padding-top: 50px;
+    padding-left: 50px; */
+}
+
+p{
+    margin-top: 50px;
+    margin-left: 50px;
+}
+/* 
+#mau-xanh-2 {
+    width: 200px;
+    height: 200px;
+    background-color: green;
+    float: right;
+} */
+
+
+/* ---------------------------------- */
+#dong-1{
+    width: 100%;
+    height: 100px;
+    background-color: #FE4B4B ;
+}
+
+#dong-2{
+    width: 90%;
+    height: 600px;
+    background-color: #4B82FE ;
+    margin: auto;
+}
+
+.block-2-1{
+    width: 80%;
+    height: 100%;
+    background-color:#4B82FE ;
+    float: left;
+}
+
+.block-2-2{
+    width: 20%;
+    height: 60%;
+    background-color:#229954 ;
+    float: left;
+}
+
+.block-2-3{
+    width: 20%;
+    height: 40%;
+    background-color:#FFC300 ;
+    float: left;
+}
+
+#dong-3{
+    width: 90%;
+    height: 600px;
+    background-color: #229954  ;
+    margin: auto;
+}
+
+.block-3-1 {
+    width: 50%;
+    height: 100%;
+    background-color: tomato;
+    float: left;
+}
+
+.block-3-1-1 {
+    width: 100%;
+    height: 60%;
+    background-color: seagreen;
+    float: left;
+}
+
+.block-3-1-2 {
+    width: 50%;
+    height: 40%;
+    float: left;
+    background-color: pink;
+}
+
+.block-3-1-3 {
+    width: 50%;
+    height: 40%;
+    float: left;
+    background-color: #FEA44B ;
+}
+
+.block-3-2 {
+    width: 50%;
+    height: 100%;
+    background-color: red;
+    float: left;
+}
+
+.block-3-2-1 {
+    width: 100%;
+    height: 75%;
+    float: left;
+    background-color: #FE4B54;
+}
+
+.block-3-2-1-1 {
+    width: 60%;
+    height: 100%;
+    float: left;
+    background-color: #FE4B54;
+}
+
+.block-3-2-1-2 {
+    width: 40%;
+    height: 100%;
+    float: left;
+    background-color: #FE4B54;
+}
+
+.block-3-2-1-2-a {
+    width: 100%;
+    height: 40%;
+    float: left;
+    background-color: #FEA44B;
+}
+
+.block-3-2-1-2-b {
+    width: 100%;
+    height: 60%;
+    float: left;
+    background-color: seagreen;
+}
+
+
+.block-3-2-2 {
+    width: 100%;
+    height: 25%;
+    float: left;
+    background-color: pink;
+}
+
+
+#dong-4{
+    width: 90%;
+    height: 100px;
+    background-color: #4B82FE ;
+    margin: auto;
+}
