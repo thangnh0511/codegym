@@ -165,3 +165,149 @@
     height: 900px;
 }
 
+#box-all {
+    /* margin: 10px 10px 10px 10px; */
+    width: 2400px;
+    height: 1200px;
+    margin: auto;
+}
+
+#box-1{
+    width: 1490px;
+    height: 1190px;
+    background-color: salmon;
+    float: left;
+    border: 5px double red;
+}
+
+#box-1-1 {
+    width: 100%;
+    height: 600px;
+    float: left;
+    background-color: white ;
+    padding: 50px 0px 50px;
+    border: 5px double red;
+}
+
+.dong-1 {
+    width: 600px;
+    height: 200px;
+    margin: auto;
+
+}
+
+.box-1-xam {
+    width: 200px;
+    height: 200px;
+    background-color: #ccc;
+    float: left;
+}
+
+.box-1-trang {
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    float: left;
+}
+
+#box-1-2 {
+    width: 100%;
+    height: 400px;
+    float: left;
+    padding: 45px 0px 30px;
+    background-color: white;
+    border: 5px double red;
+}
+
+.dong-2 {
+    width: 1000px;
+    height: 200px;
+    margin: auto;
+}
+
+.red-2{
+    width: 200px;
+    height: 200px;
+    background-color: #FF2100;
+    float: left;
+}
+
+.yel-2{
+    width: 200px;
+    height: 200px;
+    background-color: #FFC300;
+    float: left;
+}
+
+.gre-2{
+    width: 200px;
+    height: 200px;
+    background-color: #229954;
+    float: left;
+}
+
+.blu-2{
+    width: 200px;
+    height: 200px;
+    background-color: #1F618D;
+    float: left;
+}
+
+.bur-2{
+    width: 200px;
+    height: 200px;
+    background-color: #B800FF;
+    float: left;
+}
+
+.space-2 {
+    margin-left: 200px;
+}
+
+#box-2 {
+    width: 890px;
+    height: 900px;
+    background-color: white;
+    float: left;
+    border: 5px double red;
+    padding: 100px 0px 100px;
+}
+
+.dong-3-1 {
+    width: 300px;
+    height: 300px;
+    margin: auto;
+}
+
+.dong-3-2 {
+    width: 500px;
+    height: 300px;
+    margin: auto;
+}
+
+.dong-3-3 {
+    width: 700px;
+    height: 300px;
+    margin: auto;
+}
+
+.red-bar-3 {
+    width: 100%;
+    height: 100px;
+    background-color: #FF2100;
+    float: left;
+}
+
+.xam-bar-l {
+    width: 100px;
+    height: 200px;
+    background-color: #ccc;
+    float: left;
+}
+
+.xam-bar-r {
+    width: 100px;
+    height: 200px;
+    background-color: #ccc;
+    float: right;
+}
