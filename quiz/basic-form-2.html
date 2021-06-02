@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .main{
+            margin: auto;
+            width: 90%;
+            padding: 20px 20px 20px 50px;
+            box-shadow: 0 5px 10px 0px rgba(1, 1, 1, 1);
+            background-color: white;
+        }
+        .box-note{
+            /* margin-left: 20px; */
+            margin: auto;
+            padding-top: 20px;
+            width: 90% ;
+            background-color: #ccc;
+            padding: 10px 10px 10px 10px;
+            border-radius: 7px;
+        }
+        .box-learn{
+            /* margin-left: 20px; */
+            margin-top: 20px;
+            width: 90% ;
+            background-color: rgba(255, 174, 0, 0.363);
+            padding: 20px 20px 20px 20px;
+            border-radius: 7px;
+        }
+    </style>
+    <title>Tạo form đơn giản</title>
+</head>
+<body>
+    <div class="main">
+        <div class="box-note">
+            <table width="100%">
+                <form action="">
+                    <tr>
+                        <td colspan="2" align="center"><h1>SỞ THÍCH CỦA BẠN</h1></td>
+                    </tr>
+                    <tr>
+                        <td align="right">Họ và tên</td>
+                        <td style="padding-left: 30px;">
+                            <input type="text" placeholder="Nhập họ và tên" width="50%">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="right">Email</td>
+                        <td style="padding-left: 30px;">
+                            <input type="email" width="50%">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="right">Sở thích</td>
+                        <td style="padding-left: 30px;">
+                            <input type="checkbox" name="check1" id="c1"><label for="c1">Thể thao</label>
+                            <input type="checkbox" name="check2"><label>Âm nhạc</label>
+                            <input type="checkbox" name="check3"><label>Đọc sách</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td style="padding-left: 30px;">
+                            <input type="submit" value="Gửi thông tin">
+                            <input type="reset" value="Nhập lại">
+                        </td>
+                    </tr>
+                </form>
+            </table>
+        </div>
+        <br><br>
+        <div class="box-note">
+            <table width="80%" style="margin:auto">
+                <form action="">
+                    <tr>
+                        <td colspan="2" align="center"><h1>ĐĂNG KÝ HỌC VIÊN</h1></td>
+                    </tr>
+                    <tr>
+                        <td align="left" width="15%">Họ và tên</td>
+                        <td style="padding-left: 30px;">
+                            <input type="text" placeholder="Nhập họ và tên" width="50%">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="left">Email</td>
+                        <td style="padding-left: 30px;">
+                            <input type="email" width="50%">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="left">Giới tính</td>
+                        <td style="padding-left: 30px;">
+                            <input type="radio" id="g1"><label for="g1">Nam</label>
+                            <input type="radio" id="g2"><label for="g2">Nữ</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="left">Địa chỉ</td>
+                        <td style="padding-left: 30px;">
+                            <textarea name="diachi" id="" width="100%"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="left">Sở thích</td>
+                        <td style="padding-left: 30px;">
+                            <input type="checkbox" name="check1" id="c1"><label for="c1">Thể thao</label>
+                            <input type="checkbox" name="check2"><label>Âm nhạc</label>
+                            <input type="checkbox" name="check3"><label>Đọc sách</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td style="padding-left: 30px;">
+                            <input type="submit" value="Gửi thông tin">
+                            <input type="reset" value="Nhập lại">
+                        </td>
+                    </tr>
+                </form>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
