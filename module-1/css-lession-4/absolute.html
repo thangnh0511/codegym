@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Lato&family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        h1{
+            font-family: 'Bungee', cursive;
+            font-size: 54px;
+            text-align: center;
+        }
+        h2 {
+            font-family: 'Prompt', sans-serif;
+            font-size: 40px;
+        }
+        p {
+            font-family: 'Prompt', sans-serif;
+        }
+
+        #all{
+            width: 600px;
+            height: 600px;
+            background-color: #FE9C9C;
+            position: relative;
+        }
+        #absolute {
+            width: 200px;
+            height: 200px;
+            background-color: #78F3B8;
+            position: absolute;
+            top: 100px;
+            left: 50px;
+        }
+        #child {
+            width: 50px;
+            height: 50px;
+            background-color: #D0F500;
+            position: absolute;
+            left: 100px;
+        }
+    </style>
+    <title>Lession 4 - Position</title>
+</head>
+<body>
+    <h2>Absolute</h2>
+    <p>Định nghĩa của đối tượng so với đối tượng cha được định vị</p>
+    <!-- <div id="absolute">
+        Tiếp nhận thông tin, Công an phường đã phân công cán bộ để tìm hiểu, xác minh vụ việc trong đó giao trực tiếp cho Phó Trưởng Công an phường làm đầu mối.
+    </div> -->
+
+    <div id="all" >
+        <div id="absolute">
+            <div id="child"></div>
+        </div>
+    </div>
+</body>
+</html>
