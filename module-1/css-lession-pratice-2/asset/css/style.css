@@ -3,6 +3,14 @@
     padding: 0px;
 }
 
+a{
+    color: black;
+}
+
+a:hover {
+    color: brown;
+}
+
 #info {
     width: 1880px;
     min-height: 200px;
