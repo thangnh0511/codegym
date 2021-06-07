@@ -1,0 +1,50 @@
+html{
+    margin: auto;
+    padding: 10px 40px 10px 40px;
+}
+
+body{
+    /* background-color: rgba(149, 150, 138, 0.89); */
+    /* background-image: url('img/free-vector-000541-vai-caro-ke-soc-vuong-vector-41-free.jpg');
+    background-size: 500px; */
+    background: url("img/pexels-eberhard-grossgasteiger-1287145.jpg") no-repeat;
+    background-size: 100%;
+    background-position: top;
+}
+
+h1 {
+    color: rgba(228, 201, 166, 0.89);
+    font-size: 60px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border: 3px dotted #ccc;
+}
+p {
+    font-size: 20px;
+}
+#p1{
+    color: royalblue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#p2{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#p3{
+    text-align: justify;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-left: 3px solid #ccc;
+    padding-left: 10px;
+}
+.covid{
+    color: red;
+}
+.highlight{
+    color: goldenrod;
+    border: 3px solid;
+}
+
+
+/* 3 thuộc tính border thường dùng
+    - border-size -> kích thước đường viền
+    - border-style -> kiểu border
+    - border-color -> màu đường viền
+ */
