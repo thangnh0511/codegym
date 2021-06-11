@@ -83,7 +83,7 @@ display: none;
 
 #menu-down {}
 
-#menu-down ul li {list-style: none; width: 220px; height: 58px; margin-top: 10px; border-bottom-width: 1.6px; border-bottom-color: #ccc; border-bottom-style: solid; padding: 5px; position: relative;}
+#menu-down ul li {list-style: none; width: 230px; height: 58px; margin-top: 10px; border-bottom-width: 1.6px; border-bottom-color: #ccc; border-bottom-style: solid; padding: 5px; position: relative;}
 
 #menu-down img { width: 30px; height: 28px; margin: 5px 10px; position: absolute;}
 
