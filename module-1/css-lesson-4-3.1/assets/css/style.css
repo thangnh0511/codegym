@@ -64,8 +64,6 @@ display: none;
 
 /* ------------- Container -------------- */
 
-
-
 #left-cont { width: 620px; float: left; padding: 20px;}
 
 .block {width: 100%; height: 26px; padding: 5px 10px; border: 1px solid; float: left; margin-bottom: 20px; line-height: 26px; font-size: 12px; font-weight: bold;}
