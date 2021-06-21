@@ -143,4 +143,4 @@ footer{
 }
 .search {width: 340px; height: 30px; position: fixed; left: 220px; bottom: 20px;}
 .text-area{width: 70%; height: 100%; border-top-left-radius: 15px; border-bottom-left-radius: 15px; background-color: #e8d3a5; float: left;border: none; padding-left:20px ;}
-.search-btn {width: 30%; float: leftt; height: 100%; border-bottom-right-radius: 15px; border-top-right-radius: 15px; background-color: #db6516; font-size: 17px; border: none;}
+.search-btn {width: 30%; float: leftt; height: 100%; border-bottom-right-radius: 15px; border-top-right-radius: 15px; background-color: #db6516; font-size: 17px; cursor: pointer;}
