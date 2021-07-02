@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Responsive</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@200;500&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: 'Montserrat Alternates', sans-serif;
+                }
+        /* ---- Mobile - First ---- */
+        [class*="col-"] {
+                width: 100%;
+                float: left;
+                box-sizing: border-box;
+                transition: .2s;
+            }
+        .yeah:hover {
+            transform:scale(1.1,1.1);
+            background: #80D0CD;
+        }
+
+        #center  {font-size: 10px;}
+        #center::after {
+            content: '';
+            clear: both;
+            display: table;
+        }
+        
+        .area {width:100%; margin: 10px auto; border: 1px solid blue ; padding: 10px;}
+        .img-test {width: 100%;}
+        .border { width:100%; border: 1px solid blue; padding: 10px;}
+
+        @media only screen and (min-width: 500px) {
+            .col-1-5 {width: 8.33%;}
+            .col-2-5 {width: 16.67%;}
+            .col-3-5 {width: 25%;}
+            .col-4-5 {width: 33.33%;}
+            .col-5-5 {width: 41.67%;}
+            .col-6-5 {width: 50%;}
+            .col-7-5 {width: 58.33%;}
+            .col-8-5 {width: 66.67%;}
+            .col-9-5 {width: 75%;}
+            .col-10-5 {width: 83.33%;}
+            .col-11-5 {width: 91.67%;}
+            .col-12-5 {width: 100%;}
+            
+            .area {width:95%;}
+            
+            #center {
+                margin-left: -7px;
+                margin-right: -7px;
+            }
+            #center ul li {
+                float: none;
+            }
+        }
+
+        @media only screen and (min-width: 700px) {
+            .col-1-7  {width: 8.33%;}
+            .col-2-7  {width: 16.67%;}
+            .col-3-7  {width: 25%;}
+            .col-4-7  {width: 33.33%;}
+            .col-5-7  {width: 41.67%;}
+            .col-6-7  {width: 50%;}
+            .col-7-7  {width: 58.33%;}
+            .col-8-7  {width: 66.67%;}
+            .col-9-7 {width: 75%;}
+            .col-10-7  {width: 83.33%;}
+            .col-11-7  {width: 91.67%;}
+            .col-12-7 {width: 100%;}
+
+            #center {
+                margin-left: -5px;
+                margin-right: -5px;
+            }
+
+            #center ul li {
+                float: none;
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+    <!-- <div class="row">
+        <header class="col-12" style="background: red;">
+            Header
+        </header>
+        <div id="center" style="background: blue;">
+            <div class="col-3" style="background: yellow;">
+                Left
+                <ul>
+                    <li><a href="">Item 1</a></li>
+                    <li><a href="">Item 2</a></li>
+                    <li><a href="">Item 3</a></li>
+                    <li><a href="">Item 4</a></li>
+                </ul>
+            </div>
+            <div class="col-9" style="background: green;">
+                right
+            </div>
+        </div>
+        <footer class="col-12" style="background: tomato;">
+            Footer
+        </footer>
+    </div> -->
+    <div id="all">
+        <div class="col-12">
+            <h1 style="color: #FF3600;">Responsive Image Gallery</h1>
+            <p>Resize the browser window to sê the effect</p>
+            <hr>
+        </div>
+        <div id="center">
+            <div class=" col-6-5 col-3-7 yeah">
+                <div class="area">
+                    <img src="/asset/33.jpg" alt="" class="img-test">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit ad iusto, nemo natus error vero harum voluptates perspiciatis. Suscipit quod cupiditate iusto aut deserunt, aliquam doloremque nemo ipsum placeat odit.</p>
+                </div>
+            </div>
+            <div class=" col-6-5 col-3-7 yeah">
+                <div class="area">
+                    <img src="/asset/33.jpg" alt="" class="img-test">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit ad iusto, nemo natus error vero harum voluptates perspiciatis. Suscipit quod cupiditate iusto aut deserunt, aliquam doloremque nemo ipsum placeat odit.</p>
+
+                </div>
+            </div>
+            <div class=" col-6-5 col-3-7 yeah">
+                <div class="area">
+                    <img src="/asset/33.jpg" alt="" class="img-test">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit ad iusto, nemo natus error vero harum voluptates perspiciatis. Suscipit quod cupiditate iusto aut deserunt, aliquam doloremque nemo ipsum placeat odit.</p>
+                    
+                </div>
+            </div>
+            <div class=" col-6-5 col-3-7 yeah">
+                <div class="area">
+                    <img src="/asset/33.jpg" alt="" class="img-test">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit ad iusto, nemo natus error vero harum voluptates perspiciatis. Suscipit quod cupiditate iusto aut deserunt, aliquam doloremque nemo ipsum placeat odit.</p>
+
+                </div>
+                    
+            </div>
+        </div>
+        <div class="col-12">
+            <hr>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi veniam laboriosam officia porro odio quisquam reprehenderit illo enim. A doloribus mollitia, eaque soluta delectus amet quibusdam voluptate sapiente dicta quidem.</p>
+        </div>
+    </div>
+</body>
+</html>
