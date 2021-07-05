@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive - bai tap 1</title>
+    <style>
+
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        h1,h2,h3,h4,h5,p {padding: 10px 0px;}
+        /* ---- Mobile ----  */
+        [class*="col"]{
+            width: 100%;
+            float: left;
+        }
+        .row::after {
+            content: "";
+            clear: both;
+            display: block;
+        }
+       
+        #all {
+            width: 100%;
+        }
+
+        header {
+            background: #cccccc;
+            width: 100%;
+            min-height: 46px;
+        }
+        .nav {list-style: none; text-align: center;}
+        /* .nav li { background: #ccc; height: 46px; line-height: 46px;} */
+        .nav li a{ background: #ccc; height: 46px; line-height: 46px; text-decoration: none; color: #000; width: 100%; display: inline-block;}
+        /* .nav li:hover {background: lightgreen;border-bottom: 1px solid #757575 ;} */
+        .nav li:hover  a{background: #0055A5;border-bottom: 2px solid #fff ; color: #fff;}
+
+        .content { 
+            padding: 20px;
+        }
+        .logo {
+            display: none;}
+        
+        /* ---- For tablet ----  */
+        @media only screen and (min-width: 768px) {
+            .col-1-tablet  {width: 8.33%;}
+            .col-2-tablet  {width: 16.67%;}
+            .col-3-tablet  {width: 25%;}
+            .col-4-tablet  {width: 33.33%;}
+            .col-5-tablet  {width: 41.67%;}
+            .col-6-tablet  {width: 50%;}
+            .col-7-tablet  {width: 58.33%;}
+            .col-8-tablet  {width: 66.67%;}
+            .col-9-tablet {width: 75%;}
+            .col-10-tablet  {width: 83.33%;}
+            .col-11-tablet  {width: 91.67%;}
+            .col-12-tablet {width: 100%;}
+           
+            .nav li {float: left; width: 10%;}
+        }
+
+        /* ---- For desktop ----  */
+        @media only screen and (min-width: 1024px) {
+            .col-1-desktop  {width: 8.33%;}
+            .col-2-desktop  {width: 16.67%;}
+            .col-3-desktop  {width: 25%;}
+            .col-4-desktop  {width: 33.33%;}
+            .col-5-desktop  {width: 41.67%;}
+            .col-6-desktop  {width: 50%;}
+            .col-7-desktop  {width: 58.33%;}
+            .col-8-desktop  {width: 66.67%;}
+            .col-9-desktop {width: 75%;}
+            .col-10-desktop  {width: 83.33%;}
+            .col-11-desktop  {width: 91.67%;}
+            .col-12-desktop {width: 100%;}
+
+            .nav {
+                height: 100vw;
+            }
+            .nav li {
+                float:none;
+                width: 100%;
+                height: 50px;
+            }
+            .logo {display: block; width: 100%; height: 50px; text-align: center;}
+            .logo img {width:100%; height: 50px; display: inline-block}
+        }
+
+    </style>
+</head>
+<body>
+    <div id="all" class="row">
+        <header class="col-3-desktop">
+            <div class="col row">
+                <div class="logo">
+                    <!-- <img src="./asset/CodeGym-3-02-copy.jpg" alt=""> -->
+                    <h2>LOGO HERE</h2>
+                </div>
+                <ul class="nav">
+                    <li class=""><a href="#">Home</a></li>
+                    <li class=""><a href="#">News</a></li>
+                    <li class=""><a href="#">Contact</a></li>
+                    <li class=""><a href="#">About</a></li>
+                    <!-- <li class="col col-1-tablet">Home</li>
+                    <li class="col col-1-tablet">News</li>
+                    <li class="col col-1-tablet">Contact</li>
+                    <li class="col col-1-tablet">About</li> -->
+                </ul>
+            </div>
+        </header>
+        <div class="content col-9-desktop">
+            <h1>Responsive Sidenav Example</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum ab optio vero numquam voluptates recusandae voluptate amet aut? Commodi assumenda aperiam delectus voluptatem aliquid, similique corporis tempora illum debitis? Laborum.</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error placeat, at explicabo earum odio nesciunt culpa voluptate, tenetur, ex quidem facere asperiores aut cupiditate reprehenderit tempora est eligendi quas! Numquam.</p>
+
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima, suscipit alias? Nostrum reiciendis praesentium perspiciatis laborum facere, assumenda consequatur. Similique earum nisi tenetur explicabo! Corporis sit tempora consequuntur laudantium magnam.</p>
+            <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. </h3>
+        </div>
+    </div>
+</body>
+</html>
