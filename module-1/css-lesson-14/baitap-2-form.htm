@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập Responsive - Form </title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        h1,h2,h3,h4,h5,p {padding: 10px 0px;}
+        /* ---- Mobile ----  */
+        [class*="col-"]{
+            width: 100%;
+            float: left;
+        }
+        .row::after {
+            content: "";
+            clear: both;
+            display: block;
+        }
+       
+        #all {
+            width: 100%;
+            padding: 15px;
+        }
+
+        .form {
+            background: #ccc;
+            border-radius: 3px;
+            padding: 10px;
+            font-weight: bold;
+        }
+
+        .form ul li {
+            list-style: none;
+            width: 100%;
+        }
+
+        label {
+            margin: 10px 0px;
+            display: inline-block;
+        }
+        
+        .input { 
+            width: 100%;
+            height: 30px;
+            line-height: 30px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            padding-left: 10px ;
+        }
+
+        .text-input { 
+            width: 100%;
+            min-height: 100px;
+            line-height: 30px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 15px;
+            padding-left: 10px ;
+
+        }
+
+        .submit-btn {background: palegreen; border-radius: 5px; width:100%; height: 30px; border:none; margin-bottom: 5px;}
+        .submit-btn:hover{
+            border : 1px solid #000;
+        }
+        
+        /* ---- For tablet ----  */
+        @media only screen and (min-width: 768px) {
+            #all {
+                padding: 50px;
+            }
+            .col-1-tablet  {width: 8.33%;}
+            .col-2-tablet  {width: 16.67%;}
+            .col-3-tablet  {width: 25%;}
+            .col-4-tablet  {width: 33.33%;}
+            .col-5-tablet  {width: 41.67%;}
+            .col-6-tablet  {width: 50%;}
+            .col-7-tablet  {width: 58.33%;}
+            .col-8-tablet  {width: 66.67%;}
+            .col-9-tablet {width: 75%;}
+            .col-10-tablet  {width: 83.33%;}
+            .col-11-tablet  {width: 91.67%;}
+            .col-12-tablet {width: 100%;}
+            
+            .form {
+                padding: 20px;
+                font-weight: bold;
+            }
+
+            .submit-btn {
+                float: right;
+                width: 15%;
+            }
+        }
+
+        /* ---- For desktop ----  */
+        @media only screen and (min-width: 1024px) {
+            .col-1-desktop  {width: 8.33%;}
+            .col-2-desktop  {width: 16.67%;}
+            .col-3-desktop  {width: 25%;}
+            .col-4-desktop  {width: 33.33%;}
+            .col-5-desktop  {width: 41.67%;}
+            .col-6-desktop  {width: 50%;}
+            .col-7-desktop  {width: 58.33%;}
+            .col-8-desktop  {width: 66.67%;}
+            .col-9-desktop {width: 75%;}
+            .col-10-desktop  {width: 83.33%;}
+            .col-11-desktop  {width: 91.67%;}
+            .col-12-desktop {width: 100%;}
+
+        }
+    </style>
+</head>
+<body>
+        <div id="all">
+            <div class="row">
+                <h1>Responsive Form</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi alias autem consequatur ipsum velit libero ipsam incidunt dignissimos expedita? Hic, labore placeat dolorem ex autem nulla sed aut nam aperiam.</p>
+            </div>
+            <div class="form row">
+                <form action="">
+                    <div class="row">
+                        <div class="col-3-tablet">
+                            <label for="first-name">First Name</label>
+                        </div>
+                            <div class="col-9-tablet">
+                                <input type="text" class="input" id="first-name" placeholder="Your Name">
+                            </div>
+                        </div>
+                    <div class="row">
+                        <div class="col-3-tablet">
+                            <label for="last-name">Last Name</label>
+                        </div>
+                            <div class="col-9-tablet">
+                                <input type="text" class="input" id="last-name" placeholder="Your last name">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-3-tablet">
+                            <label for="country">Country</label>
+                        </div>
+                            <div class="col-9-tablet">
+                                <select name="country" id="country" class="input">
+                                    <option value="vn">Việt Nam</option>
+                                    <option value="us">USA</option>
+                                    <option value="kr">Korea</option>
+                                    <option value="jp">Japan</option>
+                                </select>
+                            </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-3-tablet">
+                            <label for="">Subject</label>
+                        </div>
+                        <div class="col-9-tablet">
+                            <Textarea class="text-input" placeholder="Text something..."></Textarea>
+                        </div>
+                    </div>
+                    <div class="">
+                        <input type="submit" value="Submit"class="submit-btn">
+                    </div>
+                </form>
+            </div>
+
+        </div>
+</body>
+</html>
