@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        header {
+            width: 100%;
+            background: #f04b4c;
+            min-height: 46px;
+            line-height: 46px;
+            padding: 20px;
+            color: #fff;
+        }
+        
+        #main {
+            padding: 20px;
+        }
+        nav ul {
+            list-style: none;
+        }
+
+        nav ul li{
+            list-style: none;
+        }
+        nav a {
+            line-height: 46px;
+            height: 46px;
+            width: 100%;
+            background: #3d6098;
+            display: block;
+            margin-bottom: 8px;
+            box-shadow: 1px 1px 5px #000;
+            text-decoration: none;
+            color: white;
+            text-align: center;
+            font-size: 18px;
+            border-radius: 5px;
+        }
+
+        nav a:hover {
+            background: #f04b4c;
+        }
+
+        [class*="col"] {
+            width: 100%;
+            float: left;
+        }
+
+        .row::after {
+            content: '';
+            clear: both;
+            display: block;
+        }
+
+        section {
+            margin : 20px 0px;
+            color: #000;
+        }
+
+        aside {
+            background: #3d6098;
+            border-radius: 5px;
+        }
+
+        aside h3,
+        aside p {text-align: center; color: #fff; margin: 8px 0px;}
+
+        .footer {
+            background: #3d6098;
+            width: 100%;
+            height: 46px;
+            line-height: 46px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            color: white;
+        }
+
+        @media only screen and (min-width: 768px) {
+            .col-25 {
+                width: 25%;
+            }
+            .col-50 {
+                width: 50%;
+                padding: 0 20px;
+            }
+            
+            section {
+                width: 100%;
+                padding: 10px 20px;
+                margin: 0px;
+                background: #f04b4c;
+                border-radius: 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h2>Chania</h2>
+    </header>
+    <div id="main" class="row">
+        <nav  class="col-25">
+            <ul>
+                <li><a href="#">The Flight</a></li>
+                <li><a href="#">The City</a></li>
+                <li><a href="#">The Island</a></li>
+                <li><a href="#">The Food</a></li>
+            </ul>
+        </nav>
+    
+        <div class="col-50">
+            <section>
+                <h1>The City</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil vel eligendi similique! Dolor sed quas temporibus ullam esse commodi doloremque iure maiores. Quasi corrupti ipsum commodi, amet atque consectetur ex?</p>
+            </section>
+        </div>
+            <aside class="col-25">
+                <h3>What?</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+                <h3>Where?</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+                <h3>How?</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+            </aside>
+        </div>
+    </div>
+    <div class="footer">
+        <p>Resize the browser window to see how the content respond to the resizing</p>
+    </div>
+
+</body>
+</html>
