@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thực hành grid 1</title>
+    <style>
+        * {
+            font-size : 24px;
+            padding: 0;
+            margin: 0;
+        }
+        header { 
+            width: 100%;
+            height: 50px;
+            background: brown;
+        }
+        #grid-container {
+            width: 70%;
+            margin: auto;
+            min-height: 200px;
+            background: paleturquoise;
+            display: grid;
+            grid-template-rows: auto auto auto;
+            /* grid-gap :20px; */
+        }
+        [class*="grid-box"] {
+            background: palevioletred;
+            height: 200px;
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+        }
+        
+        .grid-box-1 #grid-item-1-1{
+            height: 200px;
+            grid-column: span 3;
+            background: blue;
+        }
+        .grid-box-1 #grid-item-1-2 {
+            height: 100%;
+            background:chartreuse;
+            display: grid;
+            grid-template-rows: auto auto;
+        }
+        .grid-box-1 .grid-item-1-2-1 {
+            background: chocolate;
+        }
+
+        /* ---- BOX 2 ----  */
+        .grid-box-2 {
+            display: grid;
+            grid-template-columns: auto auto;
+        }
+
+        /* ---- BOX - 2 - Item 1 ----  */
+        .grid-box-2 #grid-item-2-1 {
+            display: grid;
+            background: cyan;
+            grid-template-rows: auto auto;
+        }
+
+        #grid-item-2-1 #grid-item-2-1-1 {
+            background: darkgreen;
+        }
+
+        #grid-item-2-1 #grid-item-2-1-2 {
+            display: grid;
+        }
+        #grid-item-2-1-2 {
+            display: grid;
+            grid-template-columns: auto auto;
+        }
+        #grid-item-2-1-2 #tiny-2-1 {
+            background: darkorange;
+        }
+        #grid-item-2-1-2 #tiny-2-2 {
+            background: darkkhaki;
+        }
+
+        .grid-box-2 #grid-item-2-1 {
+            display: grid;
+        }
+
+        /* ---- BOX 2 - 2 ----  */
+        #grid-item-2-2 {
+            display: grid;
+            grid-template-rows: auto auto auto;
+        }
+        #grid-item-2-2 #grid-item-2-2-1{
+            grid-row: span 2;
+            background: darksalmon;
+            display: grid;
+            grid-template-columns: auto auto;
+        }
+
+        #tiny-2-1 {
+            background: greenyellow;
+        }
+        #tiny-2-2 {
+            background: grey;
+            display: grid;
+            grid-template-rows: auto auto ;
+        }
+        #tiny-2-a {
+            background: tomato;
+        }
+
+
+
+        /* ---- Box - 3 ----  */
+
+        .grid-box-3 {
+            background: crimson;
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <header></header>
+    <div id="grid-container">
+        <div class="grid-box-1">
+            <div class="grid-item" id="grid-item-1-1"></div>
+            <div class="grid-item" id="grid-item-1-2">
+                <div class="grid-item-1-2-1"></div>
+                <div class="grid-item-1-2-2"></div>
+            </div>
+        </div>
+        <div class="grid-box-2">
+            <div class="grid-item" id="grid-item-2-1">
+                <div id="grid-item-2-1-1"></div>
+                <div id="grid-item-2-1-2">
+                    <div id="tiny-2-1"></div>
+                    <div id="tiny-2-2"></div>
+                </div>
+            </div>
+            <div class="grid-item" id="grid-item-2-2">
+                <div id="grid-item-2-2-1">
+                    <div id="tiny-2-1"></div>
+                    <div id="tiny-2-2">
+                        <div id="tiny-2-a"></div>
+                        <div id="tiny-2-b"></div>
+                    </div>
+                </div>
+                <div id="grid-item-2-2-2"></div>
+            </div>
+        </div>
+        <div class="grid-box-3">
+            footer
+        </div>
+    </div>
+    
+</body>
+</html>
