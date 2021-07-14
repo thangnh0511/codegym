@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Lesson - FLEX</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        
+        .flex-container {
+            margin: auto;
+            width: 500px;
+            display: flex;
+            background: #A3A1A8;
+            min-height: 300px;
+            /* flex-direction: row; */
+            /* flex-direction: row-reverse;
+            flex-wrap: wrap; */
+            flex-flow: row-reverse wrap;
+        }
+
+        .flex-container > div {
+            background: #FFF587;
+            margin: 20px;
+            width: 20%;
+            height: 100px;
+        }
+
+        /* @media only screen and (min-width: 700px) {
+            .flex-container {
+                display: flex;
+                flex-direction: column;
+            }
+           
+        } */
+
+
+        #box-1 {
+        }
+
+        #box-2 {
+            background: #FF8C64;
+        }
+        #box-3 {
+            background: #FF665A;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div id="box-1">1</div>
+        <div id="box-2">2</div>
+        <div id="box-3">3</div>
+        <div id="box-4">4</div>
+        <div id="box-5">5</div>
+    </div>
+</body>
+</html>
