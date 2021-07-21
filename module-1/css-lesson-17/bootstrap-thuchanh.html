@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thuc hanh bootstrap</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="./asset/themify-icons-font/themify-icons/themify-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600&display=swap" rel="stylesheet">
+    <style>
+        .container-fluid {
+            margin: 0;
+            padding: 0;
+        }
+        .nav {
+            flex-wrap: nowrap;
+        }
+        .nav >li {
+            height: 50px;
+            min-width: 90px;
+            width: calc(60%/10);
+        }
+        a {
+            color: black;
+            line-height: 50px;
+            text-decoration: none;
+        }
+        a:hover {
+            color: brown;
+            text-decoration: none;
+        }
+        .nav__active {
+            color: brown;
+        }
+        .container-nav {
+            border-top: 1px solid #ccc;
+            border-bottom: 1px solid #ccc;
+        }
+
+       
+
+
+        .body {
+            width: 675px;
+        }
+        .body h1 { 
+            font-family: 'Roboto Slab', serif;
+        }
+
+        .info-of-content {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+        .author{
+            
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .author-info {
+            display: flex;
+            align-items: center;
+        }
+
+        .author-info img {
+            display: inline-block;
+            border-radius: 100%;
+            width: 50px;
+            margin-right: 10px;
+        }
+
+        .follow-btn {
+            width: 100px;
+            border: 2px solid #ccc;
+            line-height: 25px;
+            padding-left: 4px;
+        }
+        .follow-btn:hover {
+            background: #ccc;
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="container" style="height: 50px; line-height: 50px;">
+            <div class="text-muted"><p>Thứ tư, 21/7/2021</p></div>
+        </div>
+        <div class="container-fluid container-nav">
+                <ul class="nav list-inline" style="justify-content: center;">
+                    <li class=" text-center"><a class=" nav-item font-weight-bold" href="">Thời sự</a></li>
+                    <li class=" text-center"><a class=" nav-item font-weight-bold nav__active" href="">Góc nhìn</a></li>
+                    <li class=" text-center"><a class=" nav-item font-weight-bold" href="">Thế giới</a></li>
+                    <li class=" text-center"><a class=" nav-item font-weight-bold" href="">Video</a></li>
+                    <li class=" text-center"><a class=" nav-item font-weight-bold" href="">Kinh doanh</a></li>
+                    <li class=" text-center"><a class=" nav-item font-weight-bold" href="">Khoa học</a></li>
+                    <li class=" text-center"><a class=" nav-item font-weight-bold" href="">Giải trí</a></li>
+                    <li class=" text-center"><a class=" nav-item font-weight-bold" href="">Thể thao</a></li>
+                    <li class=" text-center"><a class=" nav-item font-weight-bold" href="">Pháp luật</a></li>
+                    <li class=" text-center"><a class=" nav-item font-weight-bold" href="">Giáo dục</a></li>
+                    <li class=" text-center"><a class=" nav-item font-weight-bold" href="">Sức khỏe</a></li>
+                    <li class=" text-center"><a class=" nav-item font-weight-bold" href="">Đời sống</a></li>
+                </ul>
+        </div>
+
+        <div class="container-fluid">
+            <div class="body container">
+                <div class="info-of-content">
+                    <div class="info">
+                        <a class=" text-info" style="text-decoration:none" href="#">Góc nhìn</a> 
+                        <i class=" text-muted ti-angle-right" style="font-size: 12px;"></i>
+                        <p class=" text-muted d-inline-block">Chính trị & chính sách</p>
+                    </div>
+                    <div class="info">
+                        <a class=" text-info" style="text-decoration:none" href="#"></a> 
+                        <p class=" text-muted d-inline-block">Thứ ba, 20/7/2021, 21:01 (GMT+7)</p>
+                    </div>
+                </div>
+                <div class="content">
+                <h1>Khi nào cần nhập viện?</h1>
+                    <div class="author my-5">
+                        <div class="author-info">
+                            <img src="./asset/nguyenvantuanpng-1589760561.png" alt="">
+                            <div class="author-info-text">
+                                <h4>Nguyễn Văn Tuấn</h4>
+                                <p class="text-muted mb-0">Giáo sư, Đại học New South Wales</p>
+                            </div>
+                            
+                        </div>
+                        <div class="author-info">
+                            <div class="follow-btn">
+                                <i class="ti-plus"></i>
+                                Theo dõi
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <p>Việc người nhiễm Covid nhẹ trở nặng không có gì mới, nhưng tỷ lệ không cao. Tôi đã theo dõi Y văn từ năm ngoái về vấn đề này và xin chia sẻ.</p>
+                            <p>Câu hỏi của nhiều người tại Việt Nam là: Số ca nhẹ có thể trở nặng, phải nhập viện là bao nhiêu? Để giải đáp phần nào thắc mắc, tôi cho rằng phải dựa vào chứng cứ thực tế. </p>
+                            <p>Chỉ cần tìm trong Y văn quốc tế, ta dễ dàng nhận ra hơn 100 nghiên cứu về diễn tiến ở những người bị nhiễm Covid 19 từ nhẹ đến nặng và những yếu tố nguy cơ giúp chúng ta tiên lượng xác suất diễn biến. </p>
+                            
+                        </div>
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+    </div>
+</body>
+</html>
