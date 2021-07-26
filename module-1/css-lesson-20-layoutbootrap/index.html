@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout bằng boostrap</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <style>
+        header {
+            min-height: 150px;
+        }
+        nav {
+            width: 100%;
+            min-height: 50px;
+            background: #757575;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            
+        }
+        .content {
+            margin: auto;
+        }
+
+        .box-text {
+            background: #ccc;
+            min-height: 100px;
+        }
+
+        footer {
+            min-height: 100px;
+        }
+        footer > div { 
+            margin: auto;
+            color: #fff;
+            font-size: 20px;
+        }
+        .btn {
+            border: none !important;
+        }
+    </style>
+</head>
+<body>
+    <!-- <div class="container-fruid">
+        <h2>col- : sử dụng cho màng hình điện thoại ( &angle; 576px) </h2>
+        <div class="row">
+            <div class="col-3 bg-primary">col-3</div>
+            <div class="col-9 bg-secondary">col-9</div>
+        </div>
+    </div>
+
+    <div class="container-fruid">
+        <h2>col-sm- : sử dụng cho màng hình máy tính bảng ( >= 576px) </h2>
+        <div class="row">
+            <div class="col-sm-3 bg-primary">col-3</div>
+            <div class="col-sm-9 bg-secondary">col-9</div>
+        </div>
+    </div>
+    <div class="container-fruid">
+        <h2>col-md- : lớn hơn 768px màng hình laptop</h2>
+        <div class="row">
+            <div class="col-sm-3 col-md-6 bg-primary">col-3</div>
+            <div class="col-sm-9 col-md-6 bg-secondary">col-9</div>
+        </div>
+    </div> -->
+
+    <div class=" container-fruid">
+        <header class="container-fruid d-flex">
+            <div class="content text-center">
+                <h1>My first Bootstrap 4 Page</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                </p>
+            </div>
+        </header>
+
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+            <a class=" navbar-brand">Navbar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-item nav-link active" href="#">Link 1 <span class="sr-only">(current)</span></a>
+                  <a class="nav-item nav-link" href="#">Link 2</a>
+                  <a class="nav-item nav-link" href="#">Link 3</a>
+                  <a class="nav-item nav-link disabled" href="#">Link 4 (disabled)</a>
+                </div>
+              </div>
+        </nav>
+        <div class="container mb-5">
+            <div class="row">
+                <div class="col-md-4 mt-md-2">
+                    <div class="container">
+                        <h3>About me</h3>
+                        <p>Photo of me</p>
+                        <textarea class="container box-text">fakephoto</textarea>
+                        <!-- <div class=" my-5 p-2"></div> -->
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus aperiam, at molestias quisquam cupiditate pariatur tempora provident, quam deserunt iusto dolore cum corrupti delectus labore numquam facere sint libero iste!</p>
+                        <h3>Some links</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                        <div class="btn-group-vertical" style="width: 100%;">
+                            <div class="btn btn-primary">Active</div>
+                            <div class="btn btn-outline-primary">Link</div>
+                            <div class="btn btn-outline-primary">Link</div>
+                            <div class="btn btn--disabled">Disable</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-8 mt-md-2">
+                    <section class="container">
+                        <h3>TITLE HEADING</h3>
+                        <p>Title description, Dec 7, 2017</p>
+                        <textarea class="container box-text">Fake Imgaư</textarea>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At quidem facere quod optio quaerat accusantium possimus, tempora nulla repudiandae eligendi illum, sit quibusdam amet perspiciatis saepe? Deserunt quaerat perferendis ullam.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates debitis molestiae repudiandae, doloribus nam aperiam totam nemo fugiat sunt quisquam dolore beatae quo animi. Dolorem, porro eaque! Odio, facere maxime.</p>
+    
+                    </section>
+                    <section class="container">
+                        <h3>TITLE HEADING</h3>
+                        <p>Title description, Dec 7, 2017</p>
+                        <textarea class="container box-text">Fake Imgaư</textarea>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At quidem facere quod optio quaerat accusantium possimus, tempora nulla repudiandae eligendi illum, sit quibusdam amet perspiciatis saepe? Deserunt quaerat perferendis ullam.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates debitis molestiae repudiandae, doloribus nam aperiam totam nemo fugiat sunt quisquam dolore beatae quo animi. Dolorem, porro eaque! Odio, facere maxime.</p>
+    
+                    </section>
+                   
+                </div>
+            </div>
+        </div>
+        <footer class="container-fruid bg-secondary fixed-bottom d-flex">
+            <div>Footer</div>
+        </footer>
+    </div>
+</body>
+</html>
