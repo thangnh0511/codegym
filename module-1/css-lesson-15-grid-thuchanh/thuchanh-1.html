@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid thực hành</title>
+    <style>
+        #grid-container {
+            background: #ccc;
+            display: grid;
+            grid-template-areas:  'header header header header'
+                        'nav nav nav nav'
+                        '. . . .'
+                        'footer footer footer footer';
+            padding: 10px;
+            grid-gap : 20px
+        }
+        #grid-container > div { 
+            background: #fff;
+            min-height: 50px;
+        }
+        .header {
+            grid-area: header;
+            height: 100px;
+        }
+        .nav {
+            grid-area: nav;
+            display: grid;
+            grid-template-columns: auto auto auto ;
+        }
+
+        .nav ul li{
+            height: 40px;
+            line-height: 40px;
+            list-style: none;
+        }
+        .nav ul li:first-child {
+            
+        }
+        
+        .nav ul li:last-child {
+            float: right;
+        }
+
+        .footer {
+            background: #757575;
+            grid-area: footer;
+        }
+    </style>
+</head>
+<body>
+    <div id="grid-container">
+        <div class="header">Header</div>
+        <div class="nav">
+            <ul>
+                <li>
+                    <ul>
+                        <li>Item 1</li>
+                        <li>Item 2</li>
+                        <li>Item 3</li>
+                    </ul>
+                </li>
+                <li>
+                    <ul>
+                        <span>Link</span>
+                    </ul>
+                </li>     
+            </ul>
+        </div>
+        <div class="main">Main</div>
+        <div class="sidebar">Sidebar</div>
+        <div class="footer">Footer</div>
+    </div>
+</body>
+</html>

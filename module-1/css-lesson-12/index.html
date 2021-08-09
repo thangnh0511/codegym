@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Lesson</title>
+    <style>
+       
+        /* .col-1 {
+            width: calc(100%/12);
+        }
+        .col-2 {
+            width: calc((100%*2)/12);
+        }
+        .col-3 {
+            width: calc((100%*3)/12);
+        }
+        .col-4 {
+            width: calc((100%*4)/12);
+        }
+        .col-5 {
+            width: calc((100%*5)/12);
+        }
+        .col-6 {
+            width: calc((100%*6)/12);
+        }
+        .col-7 {
+            width: calc((100%*7)/12);
+        }
+        .col-8 {
+            width: calc((100%*8)/12);
+        }
+        .col-9 {
+            width: calc((100%*9)/12);
+        }
+        .col-10 {
+            width: calc((100%*10)/12);
+        }
+        .col-11 {
+            width: calc((100%*11)/12);
+        }
+        .col-12 {
+            width: calc((100%*12)/12);
+        } */
+        /* ----------- */
+        .col-1 {width: 8.33%;}
+        .col-2 {width: 16.67%;}
+        .col-3 {width: 25%;}
+        .col-4 {width: 33.33%;}
+        .col-5 {width: 41.67%;}
+        .col-6 {width: 50%;}
+        .col-7 {width: 58.33%;}
+        .col-8 {width: 66.67%;}
+        .col-9 {width: 75%;}
+        .col-10 {width: 83.33%;}
+        .col-11 {width: 91.67%;}
+        .col-12 {width: 100%;}
+
+
+
+        @media only screen and (max-width: 768px) {
+            /* For mobile */
+            [class*="col-"] {
+                width: 100%;
+                height: 100px;
+                float: left;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="col-12">
+        <header class="col-12" style="background: palevioletred;">
+            Header
+        </header>
+        <div id="center" style="background: paleturquoise;">
+            <div class="col-3" style="background: palegoldenrod;">
+                Left
+            </div>
+            <div class="col-9" style="background: aquamarine;">
+                right
+            </div>
+        </div>
+        <footer class="col-12" style="background: tomato;">
+            Footer
+        </footer>
+    </div>
+</body>
+</html>

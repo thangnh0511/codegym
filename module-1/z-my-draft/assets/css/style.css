@@ -1,0 +1,96 @@
+.color-1 {color: #fef6ef;}
+.color-2 {color:#f37239}
+.color-3 {color:#6eb5ca}
+.color-4 {color:#b8d8e0}
+.color-5 {color:#525252}
+
+#all { width: 100%; height:100%;background-color: #fef6ef; box-sizing: border-box; padding:20px; z-index: -1;}
+
+/* -----HEADER------ */
+
+header { width: 100%; height: 60px; background-color: #b8d8e0; position: fixed; top: 0; left: 0; box-shadow: 0px -10px 40px -10px #525252; z-index: 1;}
+
+header::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+#logo {height: 60px; position: fixed; top: 13.5px; left: 20px;}
+#logo a img {width: 120px; float: left;}
+
+/* -----Navigate-mobile----- */
+#nav-mobile-button {float: right;}
+#nav-mobile-button img{width: 40px; position: fixed; top: 11px; right: 20px;}
+/* #background-nav{position: fixed;top: 0;bottom: 0;left: 0;right: 0; background-color: rgba(0,0,0,.3);} */
+.nav-mobile {background-color: #b8d8e0; position: fixed; width: 100%;top: 0; right: 0;bottom: 0; transform: translateX(100%); transition: transform linear 0.15s;}
+.mobile-close img {position: absolute; width: 30px; top: 25px; left: 10%;}
+.nav-mobile ul {margin-top: 70px;}
+.nav-mobile ul li {padding-bottom: 20px; padding-left:30%;padding-top: 20px;font-size: 30px; text-align: left; font-weight: bold; width: 100%;}
+.nav-mobile ul li:hover {background-color: #6eb5ca; } 
+.nav-icon {width: 40px; position: fixed; left: 10%; }
+
+#nav-btn:checked ~ .nav-overlay {position: fixed;top: 0;bottom: 0;left: 0;right: 0; background-color: rgba(0,0,0,.3); animation: fade-in linear .2s;}
+
+#nav-btn:checked ~ .mobile-close {display: none;}
+#nav-btn:checked ~ .nav-mobile{transform: translateX(0%);}
+
+@keyframes fadein {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes nav-ease-in {
+  from {transform: -100%;}
+  to {transform: 0%;}
+}
+
+
+/* -----Navigate - Tablet & Desktop */
+
+
+
+
+
+/* -----CONTAINER------ */
+
+#container {width: 100%; min-height:100px;}
+
+section {width: 100%; min-height: 100px; margin:50px 0px; z-index: inherit}
+
+#section-1::after {content: ""; clear: both; width: 0px; height: 0px; display: block;}
+
+.left {width: 100%; position: relative;}
+#img-back-ndisp{width: 100%; visibility: hidden; margin-bottom: 20px;}
+#img-back {width: 90%; position: absolute; left: -5%; animation-duration: 1s; animation-name: img-back;}
+#img-front {width: 105%; position: absolute; right: 0;animation-duration: 1s; animation-name: img-front;}
+.box-1 {width: 70%; height: 40%; background-color: #6eb5ca; position: absolute; bottom: 17%; right: 70%;animation-duration: 1s; animation-name: box-1;}
+.box-2 {width: 54%; height: 40%; background-color: #6eb5ca; position: absolute; top: 10%; left: 50%;animation-duration: 2s; animation-name: box-2;}
+
+@keyframes img-back {
+  0%{left: 30%;}
+  100% {left: -5%;}
+}
+@keyframes img-front {
+  0%{right: 30%;}
+  100% {right: 0%;}
+}
+@keyframes box-1 {
+  0%{right:-100%}
+  100%{right: 70%;}
+}
+@keyframes box-2 {
+  0%{left:-100%}
+  100%{left: 50%;}
+}
+
+.right {width: 100%;}
+#hello-h1-1 {font-size: 35px; margin: 0px;}
+#hello-h1-2 {font-size: 35px; margin: 10px 0px 20px 0px;}
+.text-block {font-size: 20px; text-align: left;margin-bottom: 10px;}
+
+
+
+
+
+/* ------FOOTER ---------- */
+footer {width: 100%; height: 60px; background-color: #525252;}

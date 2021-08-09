@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../reset-css.css">
+    <link rel="stylesheet" href="">
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+    <style>
+        p {width: 150px; height: 100px; background-color: yellow; 
+            /* display: none; */
+            /* visibility: hidden; */
+            /* display: inline; */
+            /* display: block; */
+            display: inline;
+        }
+
+        #inline {width: 150px; height: 100px; background-color: yellow; 
+            /* display: none; */
+            /* visibility: hidden; */
+            /* display: inline; */
+            /* display: block; */
+            display: inline;
+        }
+
+        #inline-block {width: 150px; height: 100px; background-color: yellow; 
+            /* display: none; */
+            /* visibility: hidden; */
+            /* display: inline; */
+            /* display: block; */
+            display: inline-block;
+        }
+        
+    </style>
+    <title>Display</title>
+</head>
+<body>
+    <div class="box1">
+        As you start to think about creating your own professional UX portfolio, it's helpful to check out examples of UX designers' portfolios. <p id="inline">These portfolios</p> can serve as inspiration and highlight best practices to consider as you begin to develop a portfolio. Here are five portfolios from entry- and mid-level UX designers at Google for you to explore:
+    </div>
+
+    <div class="box1">
+        As you start to think about creating your own professional UX portfolio, it's helpful to check out examples of UX designers' portfolios. <p id="inline-block">These portfolios</p> can serve as inspiration and highlight best practices to consider as you begin to develop a portfolio. Here are five portfolios from entry- and mid-level UX designers at Google for you to explore:
+    </div>
+    <!-- HTML -->
+    <div class="foo"> Foo </div>
+    <div class="bar"> Bar </div>
+    <script>
+        ScrollReveal().reveal('#inline-block');
+    </script>
+</body>
+</html>

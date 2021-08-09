@@ -1,0 +1,178 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+.cover {
+    background: linear-gradient(rgba(0,0,0,0.5),#009688) ,  url("../images/banner.jpg");
+    padding: 28%;
+    /* background-position: center; */
+    background-size: cover;
+    position: relative;
+
+}
+
+.logo {
+    width: 100%;
+    height: 80px;
+    position: absolute;
+    display: grid;
+    top: 0;
+}
+
+.logo img {
+    width: 150px;
+    align-self: center;
+}
+
+.header-content {
+    position: absolute;
+    top: 16%;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+}
+
+.header-content h1 {
+    font-size: 84px;
+    color: #fff;
+}
+.header-content p {
+    font-style: italic;
+    margin-bottom: 50px;
+}
+
+.header-content a {
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    border: 1px solid #fff;
+    padding: 20px;
+    margin: 5px;
+    position: relative;
+    line-height: 20px;
+    font-size: 18px;
+    z-index: 1;
+}
+
+.header-content a::before {
+    position: absolute;
+    content: "";
+    top: 0; left: 0;bottom: 0;right: 100%;
+    background: #fff;
+    transition: right .3s;
+    z-index: -1;
+}
+
+.header-content a:hover {
+    color: #000;
+ }
+    
+.header-content a:hover::before {
+    right: 0;
+    color: #000;
+}
+
+
+/* ---------- SECTION --------- */
+section {
+    margin: 50px 0px;
+    padding: 40px;
+}
+
+
+
+/* ---------- REASON ---------- */
+
+.reason {
+}
+
+
+.header-section {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 50px;
+}
+
+
+.reason-list {
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.reason-item {
+    margin-bottom: 20px;
+}
+
+.reason-item-title {
+    color: #009688;
+    font-size: 18px;
+    font-weight: 600;
+}
+.reason-item-content {
+    padding-left: 20px;
+    line-height: 18px;
+}
+
+.reason-img > img {
+    width: 350px;
+    border-radius: 4px; }
+
+
+/* ------- Provider --------- */
+
+.provider {
+    background: rgba(0,150,136,.2);
+}
+
+.provider-list {
+    margin-bottom: 20px;
+
+}
+.provider-item{
+    position: relative;
+}
+
+.provider-item img{
+    width: 100%;
+    /* margin-bottom: 20px; */
+    border-radius: 4px;
+    position: relative;
+}
+
+.overlay-img {
+    content: "aaa";
+    position: absolute;
+    top: 0;right: 0;left: 0;bottom: 0;
+    background: linear-gradient(rgba(0,0,0,0.5),#009688);
+    opacity: 0;
+    transition: .2s;
+}
+
+.content-img {
+    padding: 20px;
+    position: absolute;
+    top: 70%;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    opacity: 0;
+    transition: .2s;
+}
+
+
+.provider-item:hover .content-img {
+    top:50%;
+    opacity: 1;
+}
+
+.provider-item:hover .overlay-img  {
+    opacity: 1;
+}
+
+
+
+

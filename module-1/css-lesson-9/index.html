@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       /* Lớp giả 
+        a:link {color: red;}
+        a:visited {color: chartreuse;}
+        a:hover p{color: blue;}
+        a:active p{display: block;}
+
+        p{display: none;}
+
+
+        #test a:hover {color: blue;}
+        .mini-box {width: 100px; height: 40px; background-color: brown;}
+        #test:active p{display: block; color: black;} */
+    
+
+        /* -------------- Phần tử giả ------*/
+        /* p::first-line {
+            color: brown;
+        }
+        p::first-letter {
+            text-transform: uppercase;
+            }
+
+        h1 {position: relative; display: inline-block;}
+        h1::before {content: ""; position: absolute; background-color: brown; width: 100%; height: 20px; z-index: -1;}
+         */
+        #box-1 {
+            width: 100px; 
+            height: 100px;
+            background: brown;
+            transition: width 2s,height 4s;
+        }
+
+        #box-1:hover {width: 300px; height: 300px;}
+
+        .helo {position: relative; display: inline-block;}
+        
+        .helo::before{content :""; position: absolute; background: brown;width: 0%; height: 10px; bottom: -40%; transition: width .5s ease;
+            right: 0;        
+    }
+        .helo:hover::before {content :""; position: absolute; background: brown;width: 100%; left: 0; height: 10px; bottom: -40%; transition: width .5s ease;}
+
+        #effect {
+            
+        }
+
+    </style>
+</head>
+<body>
+        <h1 class="helo">HELLLOOOOO</h1>
+        <!-- <div id="box-1">
+        </div> -->
+        <div id="effect">
+            <div class="box">
+                <h1>Text box 1</h1>
+            </div>
+            <div class="box">
+                <h1>Text box 2</h1>
+            </div>
+        </div>
+       
+</body>
+</html>
