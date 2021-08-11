@@ -13,7 +13,7 @@
             flex-flow: wrap column;
         }
 
-        .calendar-main h1 {
+        .calendar-main h1, h2 {
             text-align: center;
             margin-bottom: 20px;
         }
@@ -32,6 +32,43 @@
         sub {
             font-size: 10px;
             color: red;
+        }
+
+        .box {
+            width: 90%;
+            margin: 30px auto;
+            min-height: 100px;
+            background: paleturquoise;
+            border-radius: 4px;
+            padding: 20px;
+        }
+
+        .box__content {
+            width: 250px;
+            margin: auto;
+            display: flex;
+            flex-flow: wrap column;
+            justify-content: center;
+        }
+
+        .box__content h4 {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .result {
+            margin: 30px auto ;
+            width: 250px;
+            min-height: 50px;
+            background: #fff;
+            border-radius: 4px;
+            font-size: 30px;
+            color: #000;
+            font-weight: 700;
+        }
+        button {
+            display: block;
+            margin: auto;
         }
     </style>
 </head>
@@ -106,14 +143,37 @@
                 
             
             </table>
-            <div>
-                <h1>Phương trình bậc 1</h1>
-                <input type="text" id="a"> X + <input type="text" id="b">
-                <h3 id="c"></h3>
+
+            <!-- Phương trình bậc 1 -->
+
+            <div class="box">
+                <h2>Phương trình bậc 1 (ax + b = 0)</h2>
+                <div class="box__content">
+                    <h4 for="">A</h4><input type="text" id="a1">
+                    <h4 for="">B</h4><input type="text" id="b1">
+                </div>
+                
+                <div id="c1" class="result"></div>
                 <button onclick="pt_bacNhat()">Submit</button>
             </div>
+
+            <!-- Phương trình bậc 2 -->
+
+            <div class="box">
+                <h2>Phương trình bậc 2 (ax<sup>2</sup> + bx + c = 0)</h2>
+                <div class="box__content">
+                    <h4 for="">A</h4><input type="text" id="a">
+                    <h4 for="">B</h4><input type="text" id="b">
+                    <h4 for="">C</h4><input type="text" id="c">
+                    <h4>Delta</h4>
+                    <div id="delta" class="result"></div>
+                    <div id="result" class="result"></div>
+                </div>
+                
+                <button onclick="pt_bacHai()">Submit</button>
+            </div>
             
-            <h1 id="result"></h1>
+
 
         </div>
     </div>
