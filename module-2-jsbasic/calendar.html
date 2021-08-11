@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar exercise</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">  
+    <style>
+        .calendar-main {
+            margin-top: 50px;
+            display: flex;
+            flex-flow: wrap column;
+        }
+
+        .calendar-main h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .calendar-header td {
+            border:  none !important;
+        }
+
+        table {
+            text-align: center;
+            /* border: 2px solid #ccc; */
+        }
+        table td, th {
+            border:1px solid #ccc;
+        }
+        sub {
+            font-size: 10px;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="calendar-main">
+            <h1>Tháng 10 - October</h1>
+            <table class="table calendar">
+                <thead>
+                    <th class=" table-danger">C.Nhật</th>
+                    <th class=" table-warning">T.Hai</th>
+                    <th class=" table-warning">T.Ba</th>
+                    <th class=" table-warning">T.Tư</th>
+                    <th class=" table-warning">T.Năm</th>
+                    <th class=" table-warning">T.Sáu</th>
+                    <th class=" table-primary">T.Bảy</th>
+                </thead>
+                <tr class="calendar-header">
+                    <td class=" text-danger">Sun</td>
+                    <td>Mon</td>
+                    <td>Tue</td>
+                    <td>Wed</td>
+                    <td>Thu</td>
+                    <td>Fri</td>
+                    <td class=" text-primary">Sat</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>1 <sub>14</sub></td>
+                    <td>2 <sub>15</sub></td>
+                    <td>3 <sub>16</sub></td>
+                </tr>
+                <tr>
+                    <td>4 <sub>17</sub></td>
+                    <td>5 <sub>18</sub></td>
+                    <td>6 <sub>19</sub></td>
+                    <td>7 <sub>20</sub></td>
+                    <td>8 <sub>21</sub></td>
+                    <td>9 <sub>22</sub></td>
+                    <td>10<sub>23</sub></td>
+                </tr>
+                <tr>
+                    <td>11 <sub>24</sub></td>
+                    <td>12 <sub>25</sub></td>
+                    <td>13 <sub>26</sub></td>
+                    <td>14 <sub>27</sub></td>
+                    <td>15 <sub>28</sub></td>
+                    <td>16 <sub>29</sub></td>
+                    <td>17 <sub>30</sub></td>
+                </tr>
+                <tr>
+                    <td>18 <sub>1/1</sub></td>
+                    <td>19 <sub>2</sub></td>
+                    <td>20 <sub>3</sub></td>
+                    <td>21 <sub>4</sub></td>
+                    <td>22 <sub>5</sub></td>
+                    <td>23 <sub>6</sub></td>
+                    <td>24 <sub>7</sub></td>
+                </tr>
+                <tr>
+                    <td>25 <sub>8</sub></td>
+                    <td>26 <sub>9</sub></td>
+                    <td>27 <sub>10</sub></td>
+                    <td>28 <sub>11</sub></td>
+                    <td>29 <sub>12</sub></td>
+                    <td>30 <sub>13</sub></td>
+                    <td>31 <sub>14</sub></td>
+                </tr>
+                
+            </table>
+        </div>
+    </div>
+</body>
+</html>
