@@ -7,6 +7,7 @@
 
 // hàm prompt - lấy dữ liệu từ bàn phím 
 
+// Phương trình bậc 1 
 
 function pt_bacNhat() {
     var a , b ;
@@ -20,6 +21,13 @@ function pt_bacNhat() {
             document.getElementById('c').innerHTML = "Phương trình Vô Nghiệm";
         }
     } else {
-        document.getElementById('c').innerHTML = "Nghiem x = " + -b/a; 
+        document.getElementById('c').innerHTML = "Nghiem x = " (-b/a); 
     }
+}
+
+
+// Phương trình bậc 2 
+
+function pt_bacHai() {
+
 }
