@@ -38,7 +38,7 @@ function pt_bacHai() {1
     delta = b*b - a*a*c ;
 
     if (a!=0) {
-        if (delta == 0) {
+        if (delta === 0) {
             document.getElementById('delta').innerHTML= delta;
             document.getElementById('result').innerHTML = `x<sub>1</sub>=  x<sub>2</sub> = ` + (-b/(2*a)) ;
         } 
