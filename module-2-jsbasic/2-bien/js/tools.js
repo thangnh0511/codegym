@@ -17,3 +17,11 @@ function showMessage() {
 }
 
 showMessage();
+
+
+function tempTransform() {
+    let cTemp = document.getElementById('c-temp').value;
+    fTemp=Math.round((cTemp*1.8) + 32);
+
+    document.getElementById('result').innerHTML = fTemp;
+}

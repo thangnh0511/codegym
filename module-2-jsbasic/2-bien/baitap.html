@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">  
+
+</head>
+<body>
+    <div class="container">
+        <form class="mt-5" action="">
+            <h3>Tính tiền gửi ngân hàng</h3><hr>
+            <div class="form-input">
+                <label for="money">Tiền gửi</label>
+                <input type="number" id="money">
+            </div>
+ 
+            <div class="form-input-2">
+                <div class="input-2">
+                    <label for="">Lãi (%/năm)</label><input type="number" id="rate">
+                </div>
+                <div class="input-2">
+                    <label for="">Số tháng gửi</label><input type="number" id="month">
+                </div>
+            </div>
+            <a type="submit" onclick="caculateMoney()" class="btn btn-primary">Tính</a>
+
+            <!-- <button type="submit" onclick="caculateMoney()">Tính</button> -->
+
+            <div id="result"></div>
+        </form>
+        <table class="table" id="table">
+        </table>
+    </div>
+
+    <script>   
+        function caculateMoney() {
+            const money= document.getElementById("money").value;
+            const rate = document.getElementById("rate").value; 
+            const month = document.getElementById("month").value;
+            var listItem = '';
+            if(money >= 1 ) {
+                document.getElementById('result').innerHTML = Math.round(money*Math.pow((1+rate/12/100),month));
+                for (let i = 1; i<=month; i++) {
+                    paidByMonth = Math.round(money*Math.pow((1+rate/12/100),i))
+                    let itemPaid =
+                        ` <tr>
+                        <td>${i}</td>
+                        <td>${paidByMonth}</td> <tr>`;
+                    listItem = listItem + itemPaid ;
+                    console.log(listItem);
+                    console.log(paidByMonth);
+                    console.log(i);
+                }
+                document.getElementById('table').innerHTML =`<thead>
+                        <th>Tháng</th>
+                        <th>Tiền</th>
+                    </thead>`+ listItem;
+            } else {
+                document.getElementById('result').innerHTML = "Opp"
+            }
+            
+        }
+    </script>
+    <!-- <script src="./js/baitap.js"></script> -->
+</body>
+</html>
