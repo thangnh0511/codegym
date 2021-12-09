@@ -14,6 +14,7 @@
     margin-top: 24px;
     font-weight: 600;
     color: #11324D;
+    cursor: pointer;
 }
 
 .search-box {
@@ -94,12 +95,13 @@
 
 .img-box {
     max-width: 350px;
-    border-radius: 2rem;
+    cursor: pointer;
+    border-radius: 1rem;
     object-fit: cover;
     transform: scale(1,1);
     z-index: 1;
     padding: 4px;
-    margin: 20px;
+    margin: 14px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 
 
@@ -107,4 +109,25 @@
 
 .img-box:hover {
     transform: scale(1.1,1.1);
+}
+
+@media screen and (max-width: 445px){
+
+    body {
+        padding: 0px 14px;
+        overflow: hidden;
+    }
+
+    .search-box {
+        width: 80%;
+        margin: 0 30px;
+
+    }
+
+    .search-input-box {
+        width: 80%;
+        margin: 0 14px;
+
+    }
+
 }
