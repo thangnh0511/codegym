@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo Regex</title>
+</head>
+<body>
+    <!-- <form action="#">
+        <input type="username" name="username" id="">
+        <input type="password">
+        <input type="email">
+        <input type="submit">
+    </form>
+
+    <script>
+        let div = document.createElement('div');
+        div.id = 'content';
+        div.innerHTML = '<p>CreateElement example</p>';
+        document.body.appendChild(div);
+    </script> -->
+
+    <ul id="menu">
+        <li>Services</li>
+        <li>About</li>
+        <li>Contact</li>
+    </ul>
+    <script>
+        let menu = document.getElementById('menu');
+        // create a new li node
+        let li = document.createElement('li');
+        li.textContent = 'Home';
+
+        // insert a new node before the first list item
+        menu.insertBefore(li, menu.firstElementChild);
+    </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SetTimeOut</title>
+  </head>
+  <body>
+    <script>
+      // function greet() {
+      //     console.log('Hello world');
+      // }
+      // function sayName(name) {
+      //     console.log('Hello' + ' '+ name);
+      // }
+
+      // // Calling the function
+      // setTimeout(greet,2000);
+      // sayName('THang');
+
+      // Callback Function Example
+      function greet(name, myFunction) {
+        console.log("Hello world");
+
+        // callback function
+        // executed only after the greet() is executed
+        myFunction(name);
+      }
+      // callback function
+      function sayName(name) {
+        console.log("Hello" + " " + name);
+      }
+      // calling the function after 2 seconds
+      setTimeout(greet, 2000, "Thang", sayName);
+    </script>
+  </body>
+</html>

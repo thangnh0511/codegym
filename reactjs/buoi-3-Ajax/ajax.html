@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Document</title>
+    <style>
+        img {
+            width: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <button onclick="requestData()">Request</button>
+    <!-- <img src="https://media1.giphy.com/media/o7wzdO31W9tLO/giphy.gif?cid=3a3539b0tm4z43otx7vl15cspa2gfvf8eqssncbmqyfa77ph&rid=giphy.gif&ct=g" style="width:440px; height:248px"> -->
+    <p id="demo"></p>
+    
+    <script>
+        function requestData() {
+            var request = $.ajax({
+                url: "http://api.giphy.com/v1/gifs/search",
+                method: "GET",
+                data: { q: 'yeah', api_key: 'OaI8Scqh6gxKwYuB0TXRiZxeyTICIFcX' },
+                dataType: "json"
+            });
+
+            request.done(function (msg) {
+                let res = msg.data;
+                res.forEach(element => {
+                   document.getElementById('demo').innerHTML += "<img src="+element.images.original.url+"'>" 
+                });
+                console.log(msg.data)
+            });
+
+            request.fail(function (jqXHR, textStatus) {
+                console.log("Request failed: " + textStatus);
+            });
+        }
+    </script>
+</body>
+
+</html>
