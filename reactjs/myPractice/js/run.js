@@ -11,8 +11,15 @@ function clearMemory () {
 
 
 function requestData() {
-    clearMemory();
+    
     let searchKey =  document.getElementById('input').value;
+    let numberLoad = 1;
+    let isClearMemory = false;
+
+    if(isClearMemory ) {
+        clearMemory();
+    }
+    
     console.log(searchKey);
 
     var request = $.ajax({
@@ -23,9 +30,13 @@ function requestData() {
     });
 
     request.done(function (msg) {
-        let res = msg.data;
+        let res = msg.data; 
+        let count = 0;
         res.forEach(element => {
-           document.getElementById('demo').innerHTML += "<img"+ " class=" + "'img-box' " + "src="+element.images.original.url+"'>" 
+            if(count < numberLoad) {
+                document.getElementById('demo').innerHTML += "<img"+ " class=" + "'img-box' " + "src="+element.images.original.url+"'>" 
+                count ++; 
+            } 
         });
         console.log(msg.data)
     });
@@ -34,6 +45,5 @@ function requestData() {
         console.log("Request failed: " + textStatus);
     });
 }
-
 
 
